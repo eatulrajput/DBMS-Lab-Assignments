@@ -98,3 +98,11 @@ WHERE CGPA = (SELECT MIN(CGPA) FROM student)
 SELECT * FROM student
 WHERE CGPA BETWEEN 6 AND 8
    AND DOB > '2006-06-01';
+   
+-- This is the command to delete the database;
+DROP DATABASE student_database;   
+   
+-- This is the command to delete database;
+   DROP DATABASE Student_Database;
+   
+   
