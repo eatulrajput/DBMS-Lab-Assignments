@@ -31,47 +31,47 @@ ADD COLUMN DOB DATE;
 
 -- Using Update command to add Date of Birthday of every student
 UPDATE student
-SET DOB = '2004-01-01'
+SET DOB = '2007-01-01'
 WHERE RollNo = 1;
 
 UPDATE student
-SET DOB = '2004-08-22'
+SET DOB = '2007-08-22'
 WHERE RollNo = 2;
 
 UPDATE student
-SET DOB = '2004-08-29'
+SET DOB = '2007-08-29'
 WHERE RollNo = 3;
 
 UPDATE student
-SET DOB = '2004-02-10'
+SET DOB = '2007-02-10'
 WHERE RollNo = 2;
 
 UPDATE student
-SET DOB = '1997-08-10'
+SET DOB = '2007-08-10'
 WHERE RollNo = 4;
 
 UPDATE student
-SET DOB = '2004-01-1'
+SET DOB = '2007-01-1'
 WHERE RollNo = 5;
 
 UPDATE student
-SET DOB = '2004-03-21'
+SET DOB = '2007-03-21'
 WHERE RollNo = 6;
 
 UPDATE student
-SET DOB = '2004-02-12'
+SET DOB = '2007-02-12'
 WHERE RollNo = 7;
 
 UPDATE student
-SET DOB = '2004-12-4'
+SET DOB = '2007-12-4'
 WHERE RollNo = 8;
 
 UPDATE student
-SET DOB = '2004-08-11'
+SET DOB = '2007-08-11'
 WHERE RollNo = 9;
 
 UPDATE student
-SET DOB = '2004-08-1'
+SET DOB = '2007-08-1'
 WHERE RollNo = 10;
 
 -- This is the command for displaying the table visually.
@@ -94,12 +94,7 @@ SELECT * FROM student
 WHERE CGPA = (SELECT MIN(CGPA) FROM student)
    OR CGPA = (SELECT MAX(CGPA) FROM student);
    
--- This is the command for the student to show records who born after 2006-01-01.   
+-- This is the command for the student to show records who born after 2006-06-01.   
 SELECT * FROM student
 WHERE CGPA BETWEEN 6 AND 8
-   AND DOB > '2006-01-01';
-
-
-
-
-
+   AND DOB > '2006-06-01';
