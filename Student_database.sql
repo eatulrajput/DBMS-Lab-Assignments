@@ -14,9 +14,9 @@ CREATE TABLE student (
 
 -- Adding Values in the table Student 
 INSERT INTO student VALUES
-    (1, 'Arhan', 'M', 7.5),
+    (1, 'Arhan', 'M', 5.5),
     (2, 'Anmol', 'F', 8.2),
-    (3, 'Atulya', 'F', 6.8),
+    (3, 'Atulya', 'F', 5.8),
     (4, 'Raj', 'M', 7.1),
     (5, 'Rohit', 'M', 8.9),
     (6, 'Roshni', 'F', 6.5),
@@ -24,10 +24,12 @@ INSERT INTO student VALUES
     (8, 'Ujjwala', 'F', 7.3),
     (9, 'Soumit', 'M', 6.0),
     (10, 'Olivia', 'F', 8.5);
+    select * from student;
     
 -- Using Alter Command to  add column for declaration of Date of birth for every student     
 ALTER TABLE student
 ADD COLUMN DOB DATE;
+
 
 -- Using Update command to add Date of Birthday of every student
 UPDATE student
@@ -79,7 +81,8 @@ select * from student;
 
 -- This is command for deletion of student record having lowest CGPA.
 DELETE FROM student
-WHERE CGPA < 6;
+WHERE CGPA = (SELECT MIN(CGPA) FROM (SELECT CGPA FROM student) AS temp);
+
 
 -- This is the command for displaying the student record between CGPA 6 to 8
 SELECT * FROM student
@@ -98,11 +101,4 @@ WHERE CGPA = (SELECT MIN(CGPA) FROM student)
 SELECT * FROM student
 WHERE CGPA BETWEEN 6 AND 8
    AND DOB > '2006-06-01';
-   
--- This is the command to delete the database;
-DROP DATABASE student_database;   
-   
--- This is the command to delete database;
-   DROP DATABASE Student_Database;
-   
    
