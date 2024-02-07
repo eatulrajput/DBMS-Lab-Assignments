@@ -1,2 +1,2 @@
-# SQL-Assignment-1
+# DBMS LAB Assignements Code
 DBMS Lab Assignment Repository
