@@ -1,0 +1,8 @@
+1. Create a table name student with the following attributes (data types are shown in the parenthesis): Roll No (Integer), Name (varchar(50)), Gender (Char), CGPA (Float)
+2. Insert at least ten records into the table.
+3. Add a new column to the table, for the Date of Birth (Date). Use the date data type to store this. Also, update the date of birth of all the records
+4. Delete from the table the record of the student whose CGPA is the lowest
+5. Display only those students whose CGPA lies in the range of [6, 8]
+6. Order the data in the tables based on CGPA from ascending to descending.
+7. Display the records for students with the smallest and the largest CGPA
+8.  Display only those students whose CGPA lies in the range of [6, 8] and whose DOB is after 1-6-2006.
